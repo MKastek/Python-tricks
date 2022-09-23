@@ -46,7 +46,7 @@ class TestAllowedToBuyAlcohol(unittest.TestCase):
             self.__alcohol.calc_unit(cl=30, percentage=-1)
             self.__alcohol.calc_unit(cl=30, percentage='type is wrong')
             self.__alcohol.calc_unit(cl=None, percentage=50)
-            self.__alcohol.calc_unit(cl='cl in str', percentage=50)
+            self.__alcohol.calc_unit(cl='cl in str-int', percentage=50)
 
     def test_convert_unit_to_gram(self):
         assert 12 == self.__alcohol.unit_to_gram(units=1)
